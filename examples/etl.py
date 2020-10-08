@@ -87,7 +87,7 @@ def _setup_etl_code(conn, please_stop):
             conn.sudo("yum -y install git")
             # conn.sudo("yum -y install gcc python3-devel")  # REQUIRED FOR psutil
             conn.run('rm -fr /home/ec2-user/ActiveData-ETL')
-            conn.run("git clone https://github.com/klahnakoski/ActiveData-ETL.git")
+            conn.run("git clone https://github.com/mozilla/ActiveData-ETL.git")
             conn.run("mkdir -p /home/ec2-user/logs")
 
     with conn.cd("/home/ec2-user/ActiveData-ETL"):

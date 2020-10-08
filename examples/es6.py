@@ -200,7 +200,7 @@ def _install_python_indexer(instance, conn):
     if not conn.exists("/home/ec2-user/ActiveData-ETL/"):
         with conn.cd("/home/ec2-user"):
             conn.sudo("yum -y install git")
-            conn.run("git clone https://github.com/klahnakoski/ActiveData-ETL.git")
+            conn.run("git clone https://github.com/mozilla/ActiveData-ETL.git")
 
     with conn.cd("/home/ec2-user/ActiveData-ETL/"):
         conn.run("git checkout push-to-es6")
@@ -250,7 +250,7 @@ def _install_pypy_indexer(instance, conn):
     if not conn.exists("/home/ec2-user/ActiveData-ETL/"):
         with conn.cd("/home/ec2-user"):
             conn.sudo("yum -y install git")
-            conn.run("git clone https://github.com/klahnakoski/ActiveData-ETL.git")
+            conn.run("git clone https://github.com/mozilla/ActiveData-ETL.git")
 
     with conn.cd("/home/ec2-user/ActiveData-ETL/"):
         conn.run("git checkout push-to-es6")
