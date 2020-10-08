@@ -38,7 +38,7 @@ with the best `estimated_value`, are bid on first.
 
 For now, you must clone the repo
 
-	git clone https://github.com/klahnakoski/SpotManager.git
+	git clone https://github.com/mozilla/ActiveData-SpotManager.git
 
 ### Branches
 
@@ -95,7 +95,7 @@ control of SpotManager.***
 your `InstanceManager`. 
 * **`instance.class`** - An additional property in `instance`: The full name 
 of the class you are using to setup/teardown an instance.
-* **`debug`** - Settings for the [logging module](https://github.com/klahnakoski/SpotManager/blob/master/pyLibrary/debugs/README.md#configuration)
+* **`debug`** - Settings for the [logging module](https://github.com/mozilla/ActiveData-SpotManager/blob/master/pyLibrary/debugs/README.md#configuration)
 
 ### More about `utility`
 
@@ -168,7 +168,7 @@ and `mount` commands.
 ### Writing a InstanceManager
 
 Conceptually, an instance manager is very simple, with only three methods 
-you need to implement.  This repo has an example [`./examples/etl.py`](https://github.com/klahnakoski/SpotManager/blob/master/examples/etl.py) 
+you need to implement.  This repo has an example [`./examples/etl.py`](https://github.com/mozilla/ActiveData-SpotManager/blob/master/examples/etl.py) 
 that you can review. 
 
 * **`required_utility()`** - function to determine how much utility is 

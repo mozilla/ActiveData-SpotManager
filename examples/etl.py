@@ -94,7 +94,7 @@ class ETL(InstanceManager):
             with conn.cd("/home/ubuntu"):
                 conn.sudo("apt-get -yf install git-core")
                 conn.run('rm -fr /home/ubuntu/ActiveData-ETL')
-                conn.run("git clone https://github.com/klahnakoski/ActiveData-ETL.git")
+                conn.run("git clone https://github.com/mozilla/ActiveData-ETL.git")
                 conn.run("mkdir -p /home/ubuntu/ActiveData-ETL/results/logs")
 
         with conn.cd("/home/ubuntu/ActiveData-ETL"):
