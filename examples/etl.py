@@ -100,7 +100,7 @@ def _setup_etl_code(conn, please_stop):
 
 
 def _install_supervisor(conn, please_stop, cpu_count):
-    conn.sudo("easy_install --upgrade pip")
+    conn.sudo("easy_install --upgrade pip==20.3.4")
     conn.sudo("pip install supervisor==4.1.0")
 
 
